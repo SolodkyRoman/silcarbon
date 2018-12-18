@@ -126,7 +126,7 @@ header {
 	padding: 90px 0;
 }
 	.section.advantages {
-		background: #2f2f39;
+		background: #223340;
 	}
 	
 	.section .advantages__list {
@@ -156,6 +156,9 @@ header {
 		justify-content: center;
 		width: 45%;
 	}
+	.advantages .advatages__list__item:last-child {
+		margin-bottom: 0;
+	}
 	.advantages .advatages__list__item__icon {
 		text-align: center;
 		margin-right: 50px;
@@ -179,7 +182,7 @@ header {
 	}
 
 	.section.partners {
-		background: #1c1f27; 
+		background: #1a3344; 
 	}
 
 .footer {
@@ -353,3 +356,43 @@ header {
 	.partners .partners__companies__item img {
 		max-width: 160px;
 	}
+
+.section.categories {
+	background: #364b5a;
+}	
+	.categories__items {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: stretch;
+		margin: 0 auto;
+		justify-content: space-around;
+		max-width: 1140px;
+	}
+	.categories a {
+		display: block;
+		flex: 0 0 28%;
+		background: #2f4250;
+		text-align: center;
+		padding: 60px 20px 40px 20px;
+		text-decoration: none;
+		transition: all 0.15s;
+	}
+	.categories a:hover {
+		background: #10222e;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+	.categories a h4 {
+		font-size: 16px;
+		font-weight: 200;
+		color: #dce4ef;
+		margin-top: 30px;
+		line-height: 1.3em;
+	}
+	.categories a img {
+		width: 65%;
+		height: 160px;
+		object-fit: cover;
+	}
+.category {
+	background: #223340;
+}
