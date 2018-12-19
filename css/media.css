@@ -14,12 +14,18 @@
   .partners .partners__companies {
     width: 90%;
   }
-   .categories a {
+   /* .categories a {
     flex: 0 0 31%;
+  } */
+  .category .category__row {
+    max-width: 95%;
   }
-  /* .categories__items {
-    justify-content: space-between;
-  }  */
+  .category .category__row__info {
+    flex-basis: calc(85% - 200px);
+  }
+  .category__row__code {
+    flex-basis: 180px;
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -27,7 +33,7 @@
   .header .header__navigation__logo {
     width: 150px;
   }
-  .header .header__navigation__navigation li a {
+  .header .header__navigation__navigation li a, .header .header__navigation__contacts__item button {
     font-size: 17px;
   }
   .header .header__navigation__contacts {
@@ -35,7 +41,10 @@
   }
   .header .header__navigation__navigation li {
     display: inline-block;
-    padding: 0 9px;
+    padding: 0 4px;
+  }
+  .header .header__navigation__navigation li a, .header .header__navigation__navigation li button {
+    font-size: 16px;
   }
   .header .header__navigation {
     padding: 10px 18px;
@@ -63,6 +72,16 @@
   }
   .categories a img {
     height: 150px;
+  }
+  .category h1 {
+    font-size: 30px;
+  }
+  .categories .categories__items__product a {
+    font-size: 14px;
+  }
+  .categories .categories__items__product a i {
+    font-size: 17px;
+    margin: 0;
   }
 }
 /* Small Devices, Tablets */
@@ -120,6 +139,38 @@
   .categories a img {
     height: 116px;
   }
+  .category__row__code {
+    font-size: 23px;   
+    flex-basis: 0;
+  }
+  .category .category__row__info {
+    margin: 28px auto 0 auto;
+    width: 90%;
+  }
+  .category .category__row__info__heading {
+    font-size: 19px;
+  }
+  .category .category__row__info__text {
+    font-size: 14px;
+  }
+  .category .category__row {
+    flex-direction: column;
+  }
+  .category {
+    padding-top: 140px;
+  }
+  .categories__items {
+    flex-direction: column;
+  }
+  .categories .categories__items__product {
+    width: 90%;
+    align-items: center;
+    margin: 0 auto 40px auto;
+  }
+  .categories .categories__items__product a {
+    width: 100%;
+    max-width: 350px;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -137,7 +188,7 @@
   .header .header__navigation__contacts__item:nth-child(2) {
     display: none;
   }
-  .mobile__menu a {
+  .mobile__menu a, .mobile__menu button {
     font-size: 26px;
     width: 75%;
   }
@@ -181,12 +232,28 @@
     flex-direction: column;
     align-items: center;
   }
-  .categories a {
-    width: 90%;
-    margin-bottom: 35px;
+  .category h1 {
+    font-size: 24px;
+    padding-bottom: 50px;
   }
-  .categories a:last-child {
-    margin-bottom: 0;
+  .category .category__row__info__heading {
+    font-size: 18px;
+  }
+  .advantages .advantages__list p {
+    font-size: 14px;
+  }
+  .section h3 {
+    font-size: 29px;
+    padding-bottom: 50px;
+  }
+  .section {
+    padding: 70px 0;
+  }
+  .section.category {
+    padding-top: 115px;
+  }
+  .partners .partners__companies__item {
+    flex-basis: 50%;
   }
 }
 /* Custom, iPhone Retina */
