@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Активированный уголь Silcarbon (Силкарбон), производство Германия для очистки воды (водоочистки),
+		очистки воздуха (воздухоочистки): активированный уголь гранулированный, порошкообразный, формованный;
+		древесный активированный уголь, кокосовый уголь, уголь из минерального сыря (каменный уголь). Продажа и замена активного угля, сорбентов">
+	<meta name="keywords" content="вод, воды, водочная, очистка, очистки, активированый, активированный, активированные, активированных,
+		активированного, уголь, активные, активных, активный, активного, активность, гранул, гранулами, гранулированный, гранулированные,
+		фильтры, фильтрах, водоподготовка, угл, угли, угля, углей, воздуха, воздухоочистка, применение, применения, примененяют, silcarbon,
+		silcarbonru, газов, газовая, форма, формованный, формованные, производят, производсве, производство, производстве, производства, кокосовый,
+		кокосового, минеральный, минерального, сточных, промышленная, промышленности, промышленность, порошковый, порошковых, порошковые,">
+
 	<title>Силкарбон Украина</title>
-	
-	<!-- <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.jpg"> -->
 	<link rel="stylesheet" href="css/bootstrap-grid.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts/Montserrat/stylesheet.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts/HelveticaNeue/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts/OpenSans/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts/Roboto/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts/MaterialDesignIcons/materialdesignicons.min.css">
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts/MaterialDesignIcons/materialdesignicons.min.css">
-	
-	<!-- <link rel="stylesheet" type="text/css" href="css/owlcarousel/owl.carousel.min.css"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/owlcarousel/owl.theme.default.min.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -25,53 +26,47 @@
 	<header class="header">
 		<div class="header__navigation" id="navbar">
 			<a class="header__navigation__logo" href="/"><img src="images/logo_silcarbon_white.png" alt="Silcarbon"></a>
-			
 			<ul class="header__navigation__navigation">
 				<li class="header__navigation__contacts__item">
-					<a href="#">Преимущества</a>
+					<button onclick="scrollInto('advantages')">Преимущества</button>
 				</li
 				><li class="header__navigation__contacts__item">
-					<a href="#">Партнеры</a>
-				</li
-				><li class="header__navigation__contacts__item">
-					<a href="#">Категории</a>
+					<button onclick="scrollInto('categories')">Категории</button>
+					</li
+					><li class="header__navigation__contacts__item">
+						<button onclick="scrollInto('partners')">Нам доверяют</button>
 				</li>
 			</ul>
-
 			<ul class="header__navigation__contacts">
 				<li class="header__navigation__contacts__item">
-					<a href="#"><i class="mdi mdi-phone"></i>+380503519745</a>
+					<a href="tel:+380503519745"><i class="mdi mdi-phone"></i>+380503519745</a>
 				</li>
 				<li class="header__navigation__contacts__item">
 					<span><i class="mdi mdi-clock"></i>Пн-Пт: 8:00 — 18:00</span>
 				</li> 
 			</ul>
-
-			<button id="show-menu-btn" class="mobile__btn">
+			<div id="show-menu-btn" class="mobile__btn">
 				<div class="mobile__btn__line"></div>
 				<div class="mobile__btn__line"></div>
 				<div class="mobile__btn__line"></div>
-			</button>
+			</div>
 		</div>
-
 		<div class="mobile__menu" id="mob-menu">			
-			<a class="mobile__menu__link removed" href="#">Преимущества</a>
-			<a class="mobile__menu__link removed" href="#">Нам доверяют</a>
-			<a class="mobile__menu__link removed" href="#">Категории</a>
+			<button class="mobile__menu__link removed" onclick="scrollInto('advantages')">Преимущества</button>
+			<button class="mobile__menu__link removed" onclick="scrollInto('categories')">Категории</button>
+			<button class="mobile__menu__link removed" onclick="scrollInto('partners')">Нам доверяют</button>
 			<button class="mobile__menu__close" id="close-menu-btn"><i class="mdi mdi-close"></i></button>
 		</div>
-
 		<div class="header__text">
 			<h1 class="header__heading">Активированый уголь Silcarbon для очистки воды и воздуха</h1>
 			<h2>Единственный эксклюзивный представитель в Украине с 2000 года</h2>
 		</div>
 		<div class="header__scrollbtn">
-			<a href="#" class="header__scrollbtn__text">Узнать больше</a><br>
-			<a href="#" class="header__scrollbtn__icon"><i class="mdi mdi-chevron-down"></i></a>
+			<button class="header__scrollbtn__text" onclick="scrollInto('advantages')">Узнать больше</button>
+			<button class="header__scrollbtn__icon" onclick="scrollInto('advantages')"><i class="mdi mdi-chevron-down"></i></button>
 		</div>
 	</header>
-
-	<section class="section advantages">
+	<section class="section advantages" id="advantages">
 		<h3 class="heading">Преимущества</h3>
 		<ul class="advantages__list">
 			<li class="advatages__list__item">
@@ -97,37 +92,39 @@
 			</li>
 		</ul>	
 	</section>
-
-	<section class="section categories">
+	<section class="section categories" id="categories">
 		<h3 class="heading">Категории товаров</h3>
 		<div class="categories__items">
-			<a class="categories__items__product" href="/water.html">
-				<img src="images/water.jpg" alt="water">
-				<h4>Уголь для очистки воды</h4>
-			</a>
-			<a class="categories__items__product" href="#">
-				<img src="images/air.jpg" alt="air">
-				<h4>Уголь для очистки воздуха</h4>
-			</a>
-			<a class="categories__items__product" href="#">
-				<img src="images/silicagel.jpg" alt="silicagel">
-				<h4>Силикагель для осушки воздуха</h4>
-			</a>
+			<div class="categories__items__product">
+				<h4>Гранулированный</h4>
+				<a href="/сoconut-granular.html">Кокосовый<i class="mdi mdi-chevron-right"></i></a>
+				<a href="/coal-granular.html">Каменноугольный<i class="mdi mdi-chevron-right"></i></a>
+				<a href="/wood-granular.html">Древесный<i class="mdi mdi-chevron-right"></i></a>
+			</div>
+			<div class="categories__items__product">
+				<h4>Формованный</h4>
+				<a href="/coal-molded.html">Каменноугольный<i class="mdi mdi-chevron-right"></i></a>
+				<a href="/wood-molded.html">Древесный<i class="mdi mdi-chevron-right"></i></a>
+			</div>
+			<div class="categories__items__product">
+				<h4>Порошковый</h4>
+				<a href="/coconut-powdered.html">Кокосовый<i class="mdi mdi-chevron-right"></i></a>
+				<a href="/coal-powdered.html">Каменноугольный<i class="mdi mdi-chevron-right"></i></a>
+				<a href="/wood-powdered.html">Древесный<i class="mdi mdi-chevron-right"></i></a>
+			</div>
 		</div>
 	</section>
-
-	<section class="section partners">
+	<section class="section partners" id="partners">
 		<h3 class="heading">Нам доверяют</h3>
 		<ul class="partners__companies">
-			<li class="partners__companies__item"><img src="images/coca-cola.png" alt="coca-cola"></li>
-			<li class="partners__companies__item"><img src="images/biola.png" alt="biola"></li>
-			<li class="partners__companies__item"><img src="images/pepsico.png" alt="coca-cola"></li>
-			<li class="partners__companies__item"><img src="images/borjomi.png" alt="coca-cola"></li>
-			<li class="partners__companies__item"><img src="images/carlsberg.png" alt="coca-cola"></li>
-			<li class="partners__companies__item"><img src="images/obolon.png" alt="coca-cola"></li>
+			<li class="partners__companies__item"><img src="images/coca-cola.png" alt="Coca-cola"></li>
+			<li class="partners__companies__item"><img src="images/biola.png" alt="Biola"></li>
+			<li class="partners__companies__item"><img src="images/pepsico.png" alt="Pepsico"></li>
+			<li class="partners__companies__item"><img src="images/borjomi.png" alt="Borjomi"></li>
+			<li class="partners__companies__item"><img src="images/carlsberg.png" alt="Carlsberg"></li>
+			<li class="partners__companies__item"><img src="images/obolon.png" alt="Obolon"></li>
 		</ul>
 	</section>
-
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
@@ -146,38 +143,20 @@
 						<h4 class="heading">Общая информация</h4>
 						<ul class="footer__info__list">
 							<li><b>ООО "Силкарбон Украина"</b></li>
-							<li><b>Тип компании:</b> Торговая компания</li>
 							<li><b>Адрес:</b> Украина, Киев, Викентия Хвойки 21</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-3 offset-lg-1 col-md-4">
-					<div class="footer__info time">
-						<h4 class="heading">Время работы</h4>
-						<ul class="footer__info__list">
-							<li>Понедельник <span class="time">08:00 — 18:00</span></li>
-							<li>Вторник <span class="time">08:00 — 18:00</span></li>
-							<li>Среда <span class="time">08:00 — 18:00</span></li>
-							<li>Четверг <span class="time">08:00 — 18:00</span></li>
-							<li>Пятница <span class="time">08:00 — 18:00</span></li>
-							<li>Суббота <span class="time">Выходной</span></li>
-							<li>Воскресенье <span class="time">Выходной</span></li>								
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="map" class="footer__map"></div>
-		
 		<div class="footer__logo">
-			<a href="#"><img src="images/logo_silcarbon_footer.png" alt=""></a>
+			<a href="/"><img src="images/logo_silcarbon_footer.png" alt="Silcarbon"></a>
 		</div>
-		
 		<div class="copyright">
 			&copy; ООО "Силкарбон Украина", 2018 
 		</div>
 	</footer>
-
 	<script>
 			// Initialize and add the map
 			function initMap() {
@@ -189,13 +168,10 @@
 			  // The marker, positioned at Uluru
 			  var marker = new google.maps.Marker({position: uluru, map: map});
 			}
-				</script>
+	</script>
 	<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBORKtU1QxoqhS4bK5sT7-Hf5taM3cRQjs&callback=initMap">
-</script>
-	<!-- <script src="js/jquery-3.3.1.min.js"></script> -->
-	<script type="text/javascript"></script>
-	<!-- <script src="js/owl.carousel.min.js"></script> -->
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBORKtU1QxoqhS4bK5sT7-Hf5taM3cRQjs&callback=initMap">
+	</script>
 	<script src="js/frontend.js"></script>
 </body>
 </html>
